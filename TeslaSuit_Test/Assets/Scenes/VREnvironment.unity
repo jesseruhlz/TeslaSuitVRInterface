@@ -324,6 +324,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1559430182}
   - component: {fileID: 1559430183}
+  - component: {fileID: 1559430185}
+  - component: {fileID: 1559430184}
   m_Layer: 0
   m_Name: VR Rig
   m_TagString: Untagged
@@ -363,6 +365,38 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 490554419}
   m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
+--- !u!143 &1559430184
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559430181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.15
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1559430185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559430181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cba36b78d598e9408653db77b9ce2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  inputSource: 4
 --- !u!1 &1833043766
 GameObject:
   m_ObjectHideFlags: 0
