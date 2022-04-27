@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 1559430183}
   - component: {fileID: 1559430185}
   - component: {fileID: 1559430186}
+  - component: {fileID: 1559430187}
   m_Layer: 0
   m_Name: VR Rig
   m_TagString: Untagged
@@ -424,6 +425,20 @@ MonoBehaviour:
   m_Controllers:
   - {fileID: 1833043768}
   m_DeadZone: 0.75
+--- !u!114 &1559430187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559430181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Timeout: 10
+  m_XROrigin: {fileID: 1559430183}
 --- !u!1 &1833043766
 GameObject:
   m_ObjectHideFlags: 0
