@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/VREnvironment.unity
+- path: Assets/PBR Folding Chairs/Demo Scene/demoScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
