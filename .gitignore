@@ -59,3 +59,4 @@ sysinfo.txt
 crashlytics-build.properties
 
 TeslaSuit_Test/Library/PackageCache/com.unity.xr.windowsmr@4.6.2/Tests/Runtime/Resources/Audio/FOA_speech_ambiX.wav
+*.dll
