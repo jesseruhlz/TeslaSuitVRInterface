@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GroundLaser
   - Foot
+  - Hand
   layers:
   - Default
   - TransparentFX
