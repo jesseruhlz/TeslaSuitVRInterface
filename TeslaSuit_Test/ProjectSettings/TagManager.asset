@@ -7,6 +7,8 @@ TagManager:
   - GroundLaser
   - Foot
   - Hand
+  - Fire
+  - HandTarget
   layers:
   - Default
   - TransparentFX

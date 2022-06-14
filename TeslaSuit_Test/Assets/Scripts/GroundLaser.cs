@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GroundLaser : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class GroundLaser : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Foot")
+        if(other.CompareTag("Foot"))
         {
             Debug.Log("Foot collided with laser.");
         }
