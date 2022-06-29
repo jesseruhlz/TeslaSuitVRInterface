@@ -10,7 +10,9 @@ using UnityEngine;
 // First implementation, using simple moveToward()
 public class GroundLaser : MonoBehaviour
 {
+    public Transform startPosition;
     public Transform targetPosition;
+    // note: higher speed value translates to slower speed movement and lower speed value translates to faster speed movement
     public float speed;
     public float t;
 
@@ -23,9 +25,18 @@ public class GroundLaser : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 a = transform.position;
-        Vector3 b = targetPosition.position;
-        transform.position = Vector3.MoveTowards(a, Vector3.Lerp(a, b, t), speed);
+        // use the below to move the laser from just start point to end point once
+        /*
+         Vector3 a = transform.position;
+         Vector3 b = targetPosition.position;
+         transform.position = Vector3.MoveTowards(a, Vector3.Lerp(a, b, t), speed);
+        */
+
+        // use the below to have the ground laser move between two points continually
+        Vector3 start = startPosition.position;
+        Vector3 end = targetPosition.position;
+        transform.position = Vector3.Lerp(start, end, Mathf.PingPong(Time.time / speed, 1));
+        
     }
 
     // Check to see if ground laser collides with users feet
